@@ -52,7 +52,7 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(100);
+        sun.moveVertical(-100);
         sun.changeSize(50);
         sun.makeVisible();
         
@@ -63,7 +63,7 @@ public class Picture
         cesped.moveVertical(140);
         cesped.moveHorizontal(-320);
         cesped.makeVisible();
-        sun.slowMoveVertical(-50);
+        sun.slowMoveVertical(180);
 
     }
 
