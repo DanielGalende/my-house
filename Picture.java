@@ -63,7 +63,7 @@ public class Picture
         cesped.moveVertical(140);
         cesped.moveHorizontal(-320);
         cesped.makeVisible();
-        sun.slowMoveVertical(180);
+        
 
     }
 
@@ -93,5 +93,19 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    
+    /**
+     * Change this picture to the end of the day
+     */
+    public void setDusk()
+    {
+        if (wall !=null)  //only if it? painted already...
+        {
+            sun.slowMoveVertical(180);
+        }
+    
+    
+    
     }
 }
