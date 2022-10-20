@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square cesped;
+    private Person persona;
 
     /**
      * Constructor for objects of class Picture
@@ -52,10 +53,15 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-100);
+        sun.moveVertical(-80);
         sun.changeSize(50);
         sun.makeVisible();
         
+        persona = new Person();
+        persona.makeInvisible();
+        persona.moveHorizontal(-240);
+        persona.changeSize(70,50);
+        persona.moveVertical(20);
         
         cesped = new Square();
         cesped.changeColor("green");
@@ -103,6 +109,8 @@ public class Picture
         if (wall !=null)  //only if it? painted already...
         {
             sun.slowMoveVertical(180);
+            persona.makeVisible();
+            persona.slowMoveHorizontal(80);
         }
     
     
